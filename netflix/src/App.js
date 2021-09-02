@@ -1,24 +1,28 @@
-import React from 'react'
-//import tmdb from 'tmdb'
-
+import React, {useEffect} from 'react'
+import tmdb from './tmdb'
+//ARQUIVO TMDB CRIADO APENAS PARA UTILIZAR A API
 
 
 export default ()=>{
+
+  useEffect(()=>{
+    const loadAll = async ()=>{
+      //PEGANDO A LISTA TOTAL
+      let list = await tmdb.getHomeList()
+      console.log(list)
+
+    }
+    loadAll()
+  },
+
+
+  [])
   return(
   <div>
-    <h1>Um dia vai chegar um dia </h1>
-    <h2>Vou ser um ótimo Dev</h2>
-    <h3>Vou vencer na vida</h3>
-    <h3>Vou vencer na vida um dia vai chegar o dia</h3>
+ <h1>Eu vu vencer e vou ser um otimo programddor front end</h1>
     <script>
     
-    function ola() {
-      alert('ola Mundo')
-      
-    }
-    setTimeout((ola,1000){
-      
-    }
+  
 
     </script>
    
