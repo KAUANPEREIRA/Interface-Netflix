@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+//import tmdb from 'tmdb'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+export default ()=>{
+  return(
+  <div>
+    <h1>Um dia vai chegar um dia </h1>
+    <h2>Vou ser um ótimo Dev</h2>
+    <h3>Vou vencer na vida</h3>
+    <h3>Vou vencer na vida um dia vai chegar o dia</h3>
+    <script>
+    
+    function ola() {
+      alert('ola Mundo')
+      
+    }
+    setTimeout((ola,1000){
+      
+    }
+
+    </script>
+   
+  </div>
+  )
 }
-
-export default App;
