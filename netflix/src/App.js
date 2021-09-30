@@ -11,7 +11,9 @@ const [movieList, SetMovielist] = useState([])
       //PEGANDO A LISTA TOTAL
       let list = await tmdb.getHomeList()
       SetMovielist(list)
+    
 
+      
     }
     loadAll()
   },
