@@ -1,5 +1,5 @@
 import React from "react";
-import './destaque.css'
+import './Destaque.css'
 
 
 export default()=>{

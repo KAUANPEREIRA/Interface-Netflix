@@ -7,13 +7,21 @@ import Destaque from './components/Destaque'
 
 
 export default ()=>{
-const [destaqueData, Setdestaquedata] = useState([])
+const [destaqueData, Setdestaquedata] = useState(null)
 const [movieList, SetMovielist] = useState([])//se inicia aqui com um array vazio
   useEffect(()=>{
     const loadAll = async ()=>{
       //PEGANDO A LISTA TOTAL ...
       let list = await tmdb.getHomeList()
       SetMovielist(list)
+
+      // pegando os originais através de um filtro
+      let originals = list.filter(i=>i.slug==='originals')
+      let randomChose = Math.floor(Math.random()* (originals[0].items.results.length - 1))
+      let chose= originals[0].items.results[randomChose]
+      
+      let choseInfo = await tmdb.getMovieInfo(chose.id, 'tv')
+      console.log(choseInfo)
     
 
       
