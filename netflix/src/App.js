@@ -21,7 +21,7 @@ const [movieList, SetMovielist] = useState([])//se inicia aqui com um array vazi
       let chose= originals[0].items.results[randomChose]
       
       let choseInfo = await tmdb.getMovieInfo(chose.id, 'tv')
-      console.log(choseInfo)
+      Setdestaquedata(choseInfo)
     
 
       
@@ -33,6 +33,9 @@ const [movieList, SetMovielist] = useState([])//se inicia aqui com um array vazi
   [])
   return(
   <div className="page">
+
+
+   
     
     {destaqueData &&
     <Destaque item ={destaqueData}/>

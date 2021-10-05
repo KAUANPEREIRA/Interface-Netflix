@@ -1,0 +1,13 @@
+.featured{
+    height:100vh;
+}
+.transicao{
+    width: inherit;
+    height: inherit; /* inherit herdar o tamanho do pai */
+    background: linear-gradient(to top, #111 10%, transparent 90%);/*para efeito degrade css */
+}
+.transicao-horizontal{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 30%, transparent 70%);
+}
