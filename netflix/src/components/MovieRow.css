@@ -7,8 +7,24 @@
 }
 .movie-list-area{
     overflow-x: hidden;
+    padding-left: 30px;
 }
 
 .movie-list-item{
     display: inline-block;
+    width:150px;
+}
+
+.movie-list-item img{
+    width:100%;
+    transform: scale(0.9);
+}
+
+.movie-lista{
+    width:99999px;
+}
+
+.movie-list-item img:hover{
+    
+    transform: scale(1);
 }
