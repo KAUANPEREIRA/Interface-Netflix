@@ -2,10 +2,12 @@ import React, {useEffect, useState} from 'react'
 import './App.css'
 import tmdb from './tmdb'
 import MovieRow from './components/MovieRow'
+import Destaque from './components/Destaque'
 //ARQUIVO TMDB CRIADO APENAS PARA UTILIZAR A API
 
 
 export default ()=>{
+const [destaqueData, Setdestaquedata] = useState([])
 const [movieList, SetMovielist] = useState([])//se inicia aqui com um array vazio
   useEffect(()=>{
     const loadAll = async ()=>{
@@ -23,6 +25,11 @@ const [movieList, SetMovielist] = useState([])//se inicia aqui com um array vazi
   [])
   return(
   <div className="page">
+    
+    {destaqueData &&
+    <Destaque item ={destaqueData}/>
+    }
+
     <section className="list">
       {movieList.map((item, key)=>(// loop para mostrar a exibição das listas item, key chave prescisa nas listas
         <MovieRow key={key} title={item.title} items={item.items}/> //item o signfica  item do loop importante entender o conceito de props
