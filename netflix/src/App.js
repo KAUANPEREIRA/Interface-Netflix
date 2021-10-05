@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import './App.css'
 import tmdb from './tmdb'
 import MovieRow from './components/MovieRow'
 //ARQUIVO TMDB CRIADO APENAS PARA UTILIZAR A API
