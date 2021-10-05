@@ -24,6 +24,10 @@ export default({item})=>{
                     <div className='descricao'>
                         {item.overview}
                     </div>
+                    <div className='buttons'>
+
+                    </div>
+                    <div className='generos'><strong>Generos:</strong>{}</div>
 
 
                 </div>
