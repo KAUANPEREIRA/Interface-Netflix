@@ -5,3 +5,10 @@
 .movieRow h2{
     margin:0px 0px 0px 30px;
 }
+.movie-list-area{
+    overflow-x: hidden;
+}
+
+.movie-list-item{
+    display: inline-block;
+}
