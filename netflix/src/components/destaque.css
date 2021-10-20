@@ -11,3 +11,22 @@
     height: inherit;
     background: linear-gradient(to right, #111 30%, transparent 70%);
 }
+
+.nome-principal{
+    font-size: 60px;
+    font-weight: bold;
+}
+.pontos{
+    font-size: 18px;
+    margin-top: 18px;
+    font-weight: bold;
+    color:#46d369;
+    display: inline-block;
+    margin-right: 15px;
+}
+.ano, .temporada{
+    font-size:18px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 15px;
+}
