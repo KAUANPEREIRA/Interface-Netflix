@@ -33,8 +33,8 @@ export default({item})=>{
                        
                     
                     <div className='buttons'>
-                        <a href={`/watch/${item.id}`}>Assistir</a>
-                        <a href={`/list/add/${item.id}`}>+ Minha lista</a>
+                        <a href={`/watch/${item.id}`} className="assistir">Assistir</a>
+                        <a href={`/list/add/${item.id}`} className="mLista">+ Minha lista</a>
 
                     </div>
                     <div className='generos'><strong>Generos:</strong>{genres.join(' , ')}</div>

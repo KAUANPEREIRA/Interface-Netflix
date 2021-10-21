@@ -40,4 +40,24 @@
 
 .buttons{
     margin-top: 15px;
+      
+}
+.assistir{
+    display: inline-block; 
+    font-size: 20px;
+    font-weight: bold;
+    padding:15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+
+
+}
+.mLista{
+    display: inline-block; 
+    font-size: 20px;
+    font-weight: bold;
+    padding:15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+
 }
