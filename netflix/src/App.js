@@ -3,6 +3,8 @@ import './App.css'
 import tmdb from './tmdb'
 import MovieRow from './components/MovieRow'
 import Destaque from './components/Destaque'
+import Header from './components/Header'
+
 //ARQUIVO TMDB CRIADO APENAS PARA UTILIZAR A API
 
 
@@ -34,6 +36,8 @@ const [movieList, SetMovielist] = useState([])//se inicia aqui com um array vazi
   return(
   <div className="page">
 
+   
+
 
    
     
@@ -47,6 +51,11 @@ const [movieList, SetMovielist] = useState([])//se inicia aqui com um array vazi
 
   ))}
     </section>
+    <footer>
+      Feito Por Kauan Direito de imagens para Netflix<br></br>
+      Dados Pegos do Themovie.db api
+    
+    </footer>
 
  
   </div>

@@ -30,3 +30,17 @@
     
     transform: scale(1);
 }
+.navegacao-direita,
+.navegacao-esquerda{
+    position:absolute;
+    width:40px;
+    height: 225px;
+}
+
+.navegacao-direita{
+    right: 0;
+}
+
+.navegacao-esquerda{
+    left:0;
+}

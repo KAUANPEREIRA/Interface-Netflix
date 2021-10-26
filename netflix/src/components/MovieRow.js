@@ -2,11 +2,21 @@
 import React from 'react'
 import './MovieRow.css'
 
+
 // componente que irar retornar baisco com o return ()
 export default ({title, items}) => {
     return(
         <div className ='movieRow'>
             <h2>{title}</h2>
+            <div className="navegacaoE">
+              
+
+            </div>
+           
+        
+           
+          
+
             <div className ='movie-list-area'>
                 <div className='movie-lista'>
                     {items.results.length>0 && items.results.map((item,key)=>(
